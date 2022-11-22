@@ -3,10 +3,66 @@
 
 body {
     font-family: 'Crimson Text', serif;
+    width: 92%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 18px 0px 18px 0px;
+    border-bottom: solid grey 1px;
+}
+
+.logo {
+    align-items: center;
+    display: inherit;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-links {
+    text-align: right;
+}
+
+.top-links a{
+    color: rgb(114, 114, 114);
+    font-weight: 300;
+    padding-bottom: 0px;
+    letter-spacing: .015em;
+    padding: 0px 6px 0px 6px;
+}
+
+.bottom-links {
+    display: flex;
+    text-align: right;
+    font-size: 18px;
+    height: fit-content;
+    align-items: center;
+}
+
+.bottom-links a{
+    font-weight: 300;
+    padding-bottom: 0px;
+    letter-spacing: .015em;
+    padding: 0px 6px 0px 6px;
 }
 
 .tag {
-    padding: 12px;
+    padding: 6px 12px 6px 12px;
     border-radius: 6px;
     margin: auto;
     text-align: center;
@@ -15,11 +71,87 @@ body {
     color: white;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 11px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.wrapper {
+    border-top: 1px solid lightgray;
 }
 
 .light {
     background-color: lightgray;
     color: black;
+}
+
+.message {
+    vertical-align: middle;
+    padding: 18px 0px 18px 0px;
+    border-bottom: 1px solid gray;
+}
+
+.event-date {
+    display: flex;
+}
+
+.date-block {
+    justify-self: start;
+    align-items: center;
+}
+
+.day-date {
+    border-right: 1px solid lightgray;
+    padding: 0px 16px 0px 16px;
+    font-size: 44px;
+    margin-bottom: 6px;
+}
+
+.day-weekday {
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.day-month {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.event-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.event-type {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.event-title {
+    color: black;
+    font-size: 24px;
+}
+
+.event-description {
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add-details {
+    padding-right: 22px;
+    align-self: center;
 }

@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Event;
 
@@ -33,6 +32,6 @@ Route::get('/events/{id}', function ($id) {
 
 // Route::get('/dashboard/{type}', function($type) {
 //     return view('type', [
-//         'type' => 
+//         'type' =>
 //     ])
 // });
